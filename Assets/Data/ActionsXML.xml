@@ -1,0 +1,65 @@
+<ActionsXML>
+
+  <Category>
+
+    <Act>place ArchitectsPost</Act>
+    <Act>place InspectorsTower</Act>
+
+  </Category>
+
+  <Category>
+
+    <Act>place ZigguratSite</Act>
+
+  </Category>
+  
+  <Category>
+
+    <Act>place Market</Act>
+    <Act>place Granary</Act>
+    <Act>place StorageYard</Act>
+    <Act>place Warehouse</Act>
+
+  </Category>
+
+  <Category>
+
+    <Act>place HerbalistsHut</Act>
+    <Act>place Well</Act>
+
+  </Category>
+
+  <Category>
+
+    <Act>place Brewery</Act>
+    <Act>place Brickworks</Act>
+    <Act>place Potter</Act>
+
+  </Category>
+
+  <Category>
+
+    <Act>place AsphaltMine</Act>
+    <Act>place CattleRanch</Act>
+    <Act>place Claypit</Act>
+    <Act>place Dock</Act>
+    <Act>place Fence</Act>
+    <Act>place GoatShed</Act>
+    <Act>place OreMine</Act>
+    <Act>place SheepStable</Act>
+
+  </Category>
+
+  <Category>
+
+    <Act>place BarleyFarm</Act>
+    <Act>place DateOrchard</Act>
+    <Act>place LentilFarm</Act>
+    <Act>place LettuceFarm</Act>
+    <Act>place OliveOrchard</Act>
+    <Act>place PomegranateOrchard</Act>
+    <Act>place WheatFarm</Act>
+
+  </Category>
+
+</ActionsXML>

@@ -1,0 +1,691 @@
+﻿<StructureDatabase>
+  
+  <Structure>
+  
+    <Name>House1s</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>House2s</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>House3s</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>EmptyLot</Name>
+    <DisplayName>Empty Lot</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+  
+    <Name>Market</Name>
+    <DisplayName>Market</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>8</BaseCost>
+    
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+  
+    <Name>Well</Name>
+    <DisplayName>Well</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+    
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>InspectorsTower</Name>
+    <DisplayName>Inspector's Tower</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>ArchitectsPost</Name>
+    <DisplayName>Architect's Post</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>12</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+  
+    <Name>Road</Name>
+    <DisplayName>Road</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>1</BaseCost>
+    
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Potter</Name>
+    <DisplayName>Potter</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>12</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Tree</Name>
+    <DisplayName>Tree</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Stone</Name>
+    <DisplayName>Stone</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>RubbleOnFire</Name>
+    <DisplayName>Fire</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>Rubble</Name>
+    <DisplayName>Rubble</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Granary</Name>
+    <DisplayName>Granary</DisplayName>
+
+    <Sizex>4</Sizex>
+    <Sizey>4</Sizey>
+    <BaseCost>12</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>StorageYard</Name>
+    <DisplayName>Storage Yard</DisplayName>
+
+    <Sizex>5</Sizex>
+    <Sizey>5</Sizey>
+    <BaseCost>12</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>MapEntrance</Name>
+    <DisplayName>Map Entrance</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>true</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>MapExit</Name>
+    <DisplayName>Map Exit</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>true</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Roadblock</Name>
+    <DisplayName>Roadblock</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>2</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>true</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>Dock</Name>
+    <DisplayName>Dock</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>5</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>true</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>BarleyFarm</Name>
+    <DisplayName>Barley Farm</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>LettuceFarm</Name>
+    <DisplayName>Lettuce Farm</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>WheatFarm</Name>
+    <DisplayName>Wheat Farm</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>LentilFarm</Name>
+    <DisplayName>Lentil Farm</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>DateOrchard</Name>
+    <DisplayName>Date Orchard</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>OliveOrchard</Name>
+    <DisplayName>Olive Orchard</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>PomegranateOrchard</Name>
+    <DisplayName>Pomegranate Orchard</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Brewery</Name>
+    <DisplayName>Brewery</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>6</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>GoatShed</Name>
+    <DisplayName>Goat Shed</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>6</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>SheepStable</Name>
+    <DisplayName>Sheep Stable</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>6</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>CattleRanch</Name>
+    <DisplayName>Cattle Ranch</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>6</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>Claypit</Name>
+    <DisplayName>Claypit</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>3</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Brickworks</Name>
+    <DisplayName>Brickworks</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>3</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Warehouse</Name>
+    <DisplayName>Warehouse</DisplayName>
+
+    <Sizex>3</Sizex>
+    <Sizey>3</Sizey>
+    <BaseCost>8</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>House1b</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>House2b</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+  
+  <Structure>
+
+    <Name>House3b</Name>
+    <DisplayName>House</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>0</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>HerbalistsHut</Name>
+    <DisplayName>Herbalist's Hut</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>AsphaltMine</Name>
+    <DisplayName>Asphalt Mine</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>OreMine</Name>
+    <DisplayName>Ore Mine</DisplayName>
+
+    <Sizex>2</Sizex>
+    <Sizey>2</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>ZigguratSite</Name>
+    <DisplayName>ZigguratSite</DisplayName>
+
+    <Sizex>6</Sizex>
+    <Sizey>8</Sizey>
+    <BaseCost>56</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Ziggurat</Name>
+    <DisplayName>Ziggurat</DisplayName>
+
+    <Sizex>6</Sizex>
+    <Sizey>8</Sizey>
+    <BaseCost>4</BaseCost>
+
+    <CanDrag>false</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+  <Structure>
+
+    <Name>Fence</Name>
+    <DisplayName>Fence</DisplayName>
+
+    <Sizex>1</Sizex>
+    <Sizey>1</Sizey>
+    <BaseCost>1</BaseCost>
+
+    <CanDrag>true</CanDrag>
+    <HasWaterTiles>false</HasWaterTiles>
+    <HasRoadTiles>false</HasRoadTiles>
+    <BuiltOnce>false</BuiltOnce>
+
+  </Structure>
+
+</StructureDatabase>

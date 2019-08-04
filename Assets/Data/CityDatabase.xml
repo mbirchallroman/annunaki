@@ -1,0 +1,14 @@
+<CityDatabase>
+
+  <City>
+
+    <Name>Ur</Name>
+    <Attitude>2</Attitude>
+
+    <Imports>Clay Wheat</Imports>
+    <Exports>Ore</Exports>
+
+  </City>
+
+
+</CityDatabase>
