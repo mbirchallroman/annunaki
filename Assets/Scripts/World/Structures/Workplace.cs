@@ -24,7 +24,6 @@ public class WorkplaceSave : StructureSave {
         closedByPlayer = w.ClosedByPlayer;
 
         activeSchedule = w.ActiveSchedule;
-        
 
     }
 

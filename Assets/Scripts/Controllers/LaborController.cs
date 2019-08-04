@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Priority_Queue;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -118,64 +119,65 @@ public class LaborController : MonoBehaviour {
             }
     }
 
-    public void CalculateWorkers() {
+	public void CalculateWorkers() {
 
-        for (int d = 0; d < (int)LaborDivision.END; d++) {
+		for (int d = 0; d < (int)LaborDivision.END; d++) {
 
-            float totalAccess = 0;
-            float leftoverWorkers = 0;
-            int WorkersAllocated = 0;
+			float totalAccess = 0;
+			//float leftoverWorkers = 0;
+			int workersToAllocate = Labor[d];
+			SimplePriorityQueue<Workplace, int> pq = new SimplePriorityQueue<Workplace, int>();
 
-            for (int b = 0; b < LaborDivisions[d].Count; b++) {
+			for (int b = 0; b < LaborDivisions[d].Count; b++) {
 
-                Workplace w = LaborDivisions[d][b];
+				Workplace w = LaborDivisions[d][b];
+				int localAccess = w.Access;
+				pq.Enqueue(w, localAccess);
+				totalAccess += localAccess;
 
-                if (w.ActiveStaff)
-                    totalAccess += w.Access;
-                
-            }
+			}
 
-            for (int b = 0; b < LaborDivisions[d].Count; b++) {
 
-                Workplace w = LaborDivisions[d][b];
-                w.Workers = 0;
+			//NEW SYSTEM BELOW
+			foreach (Workplace w in pq) {
 
-                if (w.Access == 0)
-                    continue;
+				if (w.Access == 0)
+					continue;
+				if (!w.ActiveStaff)
+					continue;
 
-                if (w.ActiveStaff) {
+				//first allocate amount of workers appropriate for the building's relative access
+				int workersWant = w.WorkersNeeded;
+				int workersCanHave = (int)((float)Labor[d] * w.Access / totalAccess); //try switching Labor[d] with workersToAllocate
 
-                    float WorkersCanHave = (Labor[d]) * (w.Access / totalAccess);
+				//if this building can have more workers than it can have, don't let it do that
+				if (workersCanHave > workersWant)
+					workersCanHave = workersWant;
 
-                    if (WorkersCanHave > w.WorkersNeeded) {
+				//Debug.Log(w + " gets " + workersCanHave + " out of " + workersToAllocate);
 
-                        leftoverWorkers += Mathf.Round(WorkersCanHave) - w.WorkersNeeded;
-                        w.Workers += w.WorkersNeeded;
+				w.Workers = workersCanHave;
+				workersToAllocate -= workersCanHave;
 
-                    }
+			}
 
-                    else {
+			foreach (Workplace w in pq) {
 
-                        w.Workers += (int)Mathf.Round(WorkersCanHave);
-                        int WorkersStillNeeded = w.WorkersNeeded - w.Workers;
+				//if there are more workers to allocate, if a building has less workers than it can have
+				if (workersToAllocate > 0 && w.Workers < w.WorkersNeeded && w.Access > 0) {
 
-                        if (WorkersStillNeeded < leftoverWorkers) {
-                            w.Workers += WorkersStillNeeded;
-                            leftoverWorkers -= WorkersStillNeeded;
-                        }
-                        else {
-                            w.Workers += (int)leftoverWorkers;
-                            leftoverWorkers -= (int)leftoverWorkers;
-                        }
+					int workersWant = w.WorkersNeeded - w.Workers;
+					if (workersWant > workersToAllocate)
+						workersWant = workersToAllocate;
+					w.Workers += workersWant;
+					workersToAllocate -= workersWant;
 
-                    }
-                    WorkersAllocated += w.Workers;
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 
-    public void SetAmountToAllocate(float n) {
+	public void SetAmountToAllocate(float n) {
         AllocateWorkers = (int)n;
     }
 

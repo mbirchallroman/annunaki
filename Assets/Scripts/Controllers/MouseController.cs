@@ -39,8 +39,6 @@ public class MouseController : InteractionController {
             if (Time.timeScale == 0 && m == Mode.Construct)
                 return;
 
-            DropPreview();
-
             if (actionController.CanDrag(act) && dragEnabled) {
 
                 if (act.What == "Road")
@@ -89,12 +87,14 @@ public class MouseController : InteractionController {
     }
 
     public override void UpdateDragging() {
-
-        
+		
         Action act = actionController.currentAction;
+		StructureData str = StructureDatabase.GetData(act.What);
+		int sizex = str != null ? str.Sizex : 1;
+		int sizey = str != null ? str.Sizey : 1;
 
-        // Start Drag
-        if (Input.GetMouseButtonDown(0))
+		// Start Drag
+		if (Input.GetMouseButtonDown(0))
             dragStartPosition = touchCoords;
 
         int start_x = Mathf.FloorToInt(dragStartPosition.x);
@@ -102,42 +102,50 @@ public class MouseController : InteractionController {
         int start_y = Mathf.FloorToInt(dragStartPosition.z);
         int end_y = Mathf.FloorToInt(touchCoords.z);
 
-        // We may be dragging in the "wrong" direction, so flip things if needed.
-        if (end_x < start_x) {
-            int tmp = end_x;
-            end_x = start_x;
-            start_x = tmp;
-        }
-        if (end_y < start_y) {
-            int tmp = end_y;
-            end_y = start_y;
-            start_y = tmp;
-        }
+		//if buildings cannot fit evenly, reduce the end_x by their modulo
+		if ((end_x - start_x) % sizex != 0)
+			end_x -= (end_x - start_x) % sizex;
 
-        // Clean up old drag previews
-        
+		//if buildings cannot fit evenly, reduce the end_y by their modulo
+		if ((end_y - start_y) % sizey != 0)
+			end_y -= (end_y - start_y) % sizey;
 
-        if (Input.GetMouseButton(0)) {
+		// We may be dragging in the "wrong" direction, so flip things if needed.
+		if (end_x < start_x) {
+			int tmp = end_x;
+			end_x = start_x;
+			start_x = tmp;
+		}
+		if (end_y < start_y) {
+			int tmp = end_y;
+			end_y = start_y;
+			start_y = tmp;
+		}
 
-            Dictionary<Node, Action> locs = new Dictionary<Node, Action>();
+		//if clicking down, add every potential building spot
+		if (Input.GetMouseButton(0)) {
 
+			Dictionary<Node, Action> locs = new Dictionary<Node, Action>();
 
-            // Display a preview of the drag area
-            for (int x = start_x; x <= end_x; x++) {
-                for (int y = start_y; y <= end_y; y++) {
+			// Display a preview of the drag area
+			for (int x = start_x; x <= end_x; x++)
+				for (int y = start_y; y <= end_y; y++)
 
-                    if(actionController.CanDo(act, x, y))
-                        locs.Add(new Node(x, y), act);
+					if (actionController.CanDo(act, x, y))
+						locs.Add(new Node(x, y), act);
 
-                }
-            }
+			actionController.actionLocations = locs;
 
-            actionController.actionLocations = locs;
+		}
 
-        }
+		//otherwise just show preview where the mouse is right now
+		else
+			DropPreview();
 
-        
-        ClearDragPreviews();
+		// Clean up old drag previews
+		ClearDragPreviews();
+
+		//New drag previews
         DragPreview();
 
         // End Drag
@@ -189,8 +197,9 @@ public class MouseController : InteractionController {
 
     public override void UpdateDropping() {
 
+		DropPreview();
 
-        Action act = actionController.currentAction;
+		Action act = actionController.currentAction;
 
         // Start Drag
         if (Input.GetMouseButtonDown(0))
