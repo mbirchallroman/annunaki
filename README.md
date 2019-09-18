@@ -1,6 +1,6 @@
 # Annunaki and Portapolis
 
-Annunaki was an attempt by me (ambitiousmustard@gmail.com) to make a Unity 3D clone of the Impressions City Building Series, which includes Caesar III and Pharaoh. I wrote weekly devlogs on /r/annunakigame before deciding to abandon the project in its current state for being too messy (and because at the time, I had no free time to work on it consistently).
+Annunaki was an attempt by me to make a Unity 3D clone of the Impressions City Building Series, which includes Caesar III and Pharaoh. I wrote weekly devlogs on /r/annunakigame before deciding to abandon the project in its current state for being too messy (and because at the time, I had no free time to work on it consistently).
 
 Portapolis is about as close to the Annunaki source code as I have and as is actually functional. It has a more architectural approach to its structure, which makes it easier to add onto and develop instead of being fairly ad-hoc and hardcoded like its predecessor. It also includes a bunch of little improvements here and there, as well as the groundwork for mobile controls.
 
